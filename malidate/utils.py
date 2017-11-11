@@ -1,9 +1,10 @@
-from config import config
 import fnmatch
 import random
 import string
 
-import database
+from .config import config
+from . import database
+
 
 def inscope(domain):
     for pattern in config["outscope"]:

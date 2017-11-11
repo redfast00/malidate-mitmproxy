@@ -5,7 +5,7 @@
 import dataset
 import requests
 import time
-from config import config
+from .config import config
 
 _db = dataset.connect(config["database"])
 _clientside = _db["clientside"]

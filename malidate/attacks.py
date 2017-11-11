@@ -1,5 +1,4 @@
-import utils
-
+from . import utils
 
 class GenericAttack(object):
     def response(self, flow):
@@ -17,5 +16,4 @@ class GenericAttack(object):
 
 class ReplaceHostAttack(GenericAttack):
     def attack(self, request):
-        print("here")
         request.host = self.generate_hostname(request)

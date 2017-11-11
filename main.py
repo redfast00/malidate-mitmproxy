@@ -3,9 +3,7 @@ import json
 import sys
 import argparse
 
-from utils import inscope
-from attacks import ReplaceHostAttack
-
+from malidate.attacks import ReplaceHostAttack
 
 
 def start():
