@@ -20,4 +20,6 @@ def get_server_interactions(prefix, verify=None):
     r = requests.get('https://export.{}/{}'.format(config['domain'], prefix), verify=verify)
     return r.json()
 
+def search_client_interaction(domainname):
+    return _clientside.find_one(domain_used=domainname)
     
